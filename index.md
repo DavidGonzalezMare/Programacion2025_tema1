@@ -296,19 +296,18 @@ namespace Ejemplo01Tema01
 
 {
 
-`    `public partial class Form1 : Form
+   public partial class Form1 : Form
 
-`    `{
+   {
+      public Form1()
 
-`        `public Form1()
-
-`        `{
+      {
 
 `            `InitializeComponent();
 
 `        `}
 
-`        `private void btnPrimero\_Click(object sender, EventArgs e)
+`        `private void btnPrimero_Click(object sender, EventArgs e)
 
 `        `{
 
