@@ -18,6 +18,11 @@
 
 1. # <a name="_toc113205603"></a>**Introducción.**
 El objetivo del módulo de Programación será aprender a programar de una forma correcta. 
+```
+function test() {
+  console.log("This code will have a copy button to the right of it");
+}
+```
 
 Programar consistirá en escribir un conjunto de instrucciones para conseguir que el ordenador resuelva un problema concreto. El resultado será un programa en un determinado lenguaje de programación.
 
