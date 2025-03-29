@@ -276,6 +276,7 @@ La propiedad Name no cambia el aspecto del botón, pero es la propiedad que le d
 Nos aparece la ventana de código:
 
 
+``` csharp
 
 using System;
 
@@ -317,10 +318,13 @@ namespace Ejemplo01Tema01
 
 }
 
+```
+
 En temas posteriores nos introduciremos en la sintaxis de C# e iremos entendiendo las distintas partes del código. De momento únicamente nos interesa el método o subprograma btnPrimero\_Click. Éste es el método que se ejecutará cuando ocurra el evento click en el botón.
 
 Ahora vamos a añadir código para que se ejecute cuando ocurra el evento click sobre el botón:
 
+''' csharp
 `   `private void btnPrimero\_Click(object sender, EventArgs e)
 
 `   `{
@@ -328,6 +332,7 @@ Ahora vamos a añadir código para que se ejecute cuando ocurra el evento click 
 MessageBox.Show("Hola Mundo. Este es mi primer programa en C#");
 
 `   `}
+'''
 
 Vamos ahora a ejecutar de nuevo el programa ![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.019.png) y pulsar sobre el botón de nuestra aplicación:
 
