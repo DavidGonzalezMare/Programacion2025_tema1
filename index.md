@@ -1,28 +1,21 @@
-![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.001.jpeg)                       ![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.002.jpeg)                                   ![PEQU_COL](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.003.png)
+![Union europea](./images/imagen01.jpeg)  ![Generalitat](./images/imagen02.jpeg)                                   ![Mare Nostrum](./images/imagen03.png)
 
-*Programación		Tema 1. Introducción a Visual Studio .NET*
-#
 # Tema 1. Introducción a Visual Studio.NET
 
-[1.	Introducción.	1](#_toc113205603)
+[*1.	Introducción*](#_apartado1)
 
-[2.	Introducción a .NET.	3](#_toc113205604)
+[*2.	Introducción a .NET*](#_apartado2)
 
-[3.	Instalación de Visual Studio 2022	5](#_toc113205605)
+[*3.	Instalación de Visual Studio 2022*](#_apartado3)
 
-[4.	Explorar el entorno de desarrollo.	6](#_toc113205606)
+[*4.	Explorar el entorno de desarrollo*](#_apartado4)
 
-[5.	Ejemplo de Proyecto Visual C#.	11](#_toc113205607)
+[*5.	Ejemplo de Proyecto Visual C#*](#_apartado5)
 
 
 
-1. # <a name="_toc113205603"></a>**Introducción.**
+# <a name="_apartado1"></a>1. Introducción.
 El objetivo del módulo de Programación será aprender a programar de una forma correcta. 
-```
-function test() {
-  console.log("This code will have a copy button to the right of it");
-}
-```
 
 Programar consistirá en escribir un conjunto de instrucciones para conseguir que el ordenador resuelva un problema concreto. El resultado será un programa en un determinado lenguaje de programación.
 
@@ -43,71 +36,17 @@ Los **errores sintácticos** son errores en la sintaxis del lenguaje, es decir, 
 
 Si pensamos en lenguajes como el castellano o el inglés sería similar a la construcción incorrecta de una frase o un texto.
 
-Se detectan a través de un software específico: **Los** **compiladores.** 
+Se detectan a través de un software específico: **Los compiladores.** 
 
 Un **compilador** realiza la comprobación de errores sintácticos antes de la ejecución del programa, en un proceso que recibe el nombre de compilación, en este proceso se realiza una verificación sintáctica de todas las líneas que componen el programa, realizándose al final del proceso un listado de todos los errores encontrados en el programa.
 
 Cuando el programa no contiene errores sintácticos podrá ser ejecutado. 
 
-Voy a meter aquí mismo un trozo de código
-Sin poner c
-```
-int cantidad, billetes;
-
-cantidad = int.Parse(tCantidad.Text);
-
-// Si la cantidad es mayor o igual que 10000 tendremos que ver cuantos billetes de 10000 hay.
-// Si es menor no hay billetes de 10000
-if (cantidad >= 10000)
-{
-    // Obtenemos el número de billetes
-    billetes = cantidad / 10000;
-    // Lo reflejamos en el label
-    lResultado.Text = lResultado.Text + billetes + " billetes de 10000\n";
-    // Nos quedamos con el resto de dinero que nos queda
-    cantidad = cantidad % 10000;
-}
-
-// Hacemos lo mismo con el resto de billetes
-if (cantidad >= 5000)
-{
-    billetes = cantidad / 5000;
-    lResultado.Text = lResultado.Text + billetes + " billetes de 5000\n";
-    cantidad = cantidad % 5000;
-}
-```
-
-Y poniendo c
-``` csharp
-int cantidad, billetes;
-
-cantidad = int.Parse(tCantidad.Text);
-
-// Si la cantidad es mayor o igual que 10000 tendremos que ver cuantos billetes de 10000 hay.
-// Si es menor no hay billetes de 10000
-if (cantidad >= 10000)
-{
-    // Obtenemos el número de billetes
-    billetes = cantidad / 10000;
-    // Lo reflejamos en el label
-    lResultado.Text = lResultado.Text + billetes + " billetes de 10000\n";
-    // Nos quedamos con el resto de dinero que nos queda
-    cantidad = cantidad % 10000;
-}
-
-// Hacemos lo mismo con el resto de billetes
-if (cantidad >= 5000)
-{
-    billetes = cantidad / 5000;
-    lResultado.Text = lResultado.Text + billetes + " billetes de 5000\n";
-    cantidad = cantidad % 5000;
-}
-```
-
 Los **errores lógicos** son aquellos que se detectan durante la ejecución del programa al no registrar las salidas o resultados previstos según la entrada de los datos. Es decir, cuando el programa que hemos desarrollado no resuelve el problema planteado.
 
 Siguiendo con lo dicho anteriormente es como si nuestra frase o texto en castellano tiene una construcción correcta pero su significado no es el que nosotros queríamos expresar.
-1. # **<a name="_toc113205604"></a>Introducción a .NET.**
+
+# <a name="_apartado2"></a>2. Introducción a .NET
 Los lenguajes de programación juegan un papel fundamental en Informática: actúan como enlace entre los problemas a resolver (aplicaciones) y la máquina que los resuelve (hardware).
 
 Una posible definición de lenguaje de programación podría ser: Un lenguaje de programación es una notación para describir **algoritmos** y **estructuras de datos**, y que pueden ser evaluados por un computador.
@@ -124,7 +63,7 @@ Nosotros, durante el curso, vamos a utilizar básicamente el lenguaje de program
 
 La **plataforma .NET** permite conectar sistemas, información, dispositivos y usuarios distintos de un modo más unificado y personalizado.
 
-![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.004.png)
+![Plataforma Net](./images/imagen04.png)
 
 
 El .NET Framework es un conjunto de servicios de programación diseñados para simplificar el desarrollo de aplicaciones sobre el entorno distribuido de Internet. El .NET Framework tiene dos componentes principales: el Common Language Runtime y la biblioteca de clases.
@@ -138,12 +77,13 @@ El entorno de ejecución incluye una característica denominada compilación *ju
 Visual Studio .NET incluye las siguientes características:
 
 Diseñador de formularios de Windows, herramientas para formularios, soporte de múltiples lenguajes incluyendo Visual Basic .NET y Visual C#, acceso a datos mediante ADO .NET, gestión de errores…
-1. # **<a name="_toc113205605"></a>Instalación de Visual Studio 2022**
-`	`Para trabajar durante el curso en el módulo de Programación vamos a utilizar el entorno de Programación Visual Studio 2022.
 
-`	`De momento vamos a utilizar la versión **Community**. Es una versión gratuita, pero con todas las funcionalidades necesarias para seguir el curso de Programación.
+# <a name="_apartado3"></a>3. Instalación de Visual Studio 2022**
+Para trabajar durante el curso en el módulo de Programación vamos a utilizar el entorno de Programación Visual Studio 2022.
 
-`	`En el siguiente enlace podéis descargar dicha versión:
+`De momento vamos a utilizar la versión **Community**. Es una versión gratuita, pero con todas las funcionalidades necesarias para seguir el curso de Programación.
+
+En el siguiente enlace podéis descargar dicha versión:
 
 <https://visualstudio.microsoft.com/es/vs/community/>
 
@@ -151,25 +91,25 @@ Con la versión **Community**, Visual Studio nos da la opción al empezar de ini
 
 Al instalar y llegar a la siguiente pantalla:
 
-![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.005.png)
+![Instalacion1](./images/imagen05.png)
 
 **nos basta con instalar Desarrollo de escritorio con .NET**.
 
 Si alguien quiere instalarse la versión Enterprise (**PARA NUESTRO MÓDULO NO ES NECESARIO**) puede entrar en Microsoft Azure, que, como alumnos de la Consellería de Educación, os permite descargaros software de Microsoft. 
 
 
-1. # ` `**<a name="_toc113205606"></a>Explorar el entorno de desarrollo.**
+# <a name="_apartado4"></a>4. Explorar el entorno de desarrollo.
 Como hemos dicho al ejecutar por primera vez tenemos la opción de iniciar sesión. Lo podemos hacer con el usuario **@alu.edu.gva.es** que tenemos asignado.
 
-![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.006.png)
+![Iniciar Sesion](./images/imagen06.png)
 
 Dejaremos la configuración de desarrollo general:
 
-![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.007.png)
+![Configuracion](./images/imagen07.png)
 
 Al abrir Visual Studio, nos aparece una ventana inicial en la cual podemos abrir un proyecto ya creado o bien podemos crear uno nuevo. También podemos entrar en el entorno de trabajo directamente pulsando la opción “Continuar sin código” (De momento pulsaremos esta opción). 
 
-![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.008.png)
+![Ventana inicial](./images/imagen08.png)
 
 - **Creación de nuestro primer proyecto**
 
@@ -177,7 +117,7 @@ A continuación, vamos a crear un primer proyecto. Pulsaremos en el menú **Arch
 
 Elegiremos arriba como Lenguaje **C#** y como Plataforma **Windows**. Elegiremos a continuación como plantilla **Aplicación de Windows Forms**.
 
-![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.009.png)
+![Aplicacion](./images/imagen09.png)
 
 Además, elegiremos la carpeta en la que queremos guardar nuestro proyecto y el nombre del mismo.
 
@@ -185,7 +125,7 @@ Una vez tenemos creado el proyecto nos aparecerá el entorno con un aspecto simi
 
 Vamos a ver por encima las principales partes del entorno y en el siguiente apartado veremos cómo realizar un pequeño programa.
 
-![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.010.png)
+![Entorno](./images/imagen10.png)
 
 - **Menús y Barras de Herramientas.**
 
@@ -240,7 +180,9 @@ Si la ventana Propiedades no está visible, hacer clic con el botón derecho sob
 Algunos controles, documentos y formularios muestran un gran número de propiedades en la ventana Propiedades. Esto puede dificultar la localización de la propiedad que deseamos establecer. La ventana Propiedades nos permite visualizar las propiedades de un formulario o control en una vista ordenada por categorías en lugar de una vista alfabética.
 
 También se pueden ver en esta ventana los **Eventos** de los controles.
-1. # **<a name="_toc113205607"></a>Ejemplo de Proyecto Visual C#.**
+
+
+# <a name="_apartado5"></a>5. Ejemplo de Proyecto Visual C#.
 Este apartado explica cómo crear una aplicación sencilla en Visual C# .NET. El objetivo es introducir al proceso de programación global, no proporcionar información detallada sobre la sintaxis del lenguaje ni la implementación, lo cual se hará en temas posteriores.
 
 Visual C# contiene todo lo necesario para crear nuestras propias aplicaciones para Windows, de principio a fin. 
@@ -253,7 +195,7 @@ Finalmente, podemos **guardar, ejecutar y compilar** nuestro programa para que o
 
 **Ejemplo de proyecto paso a paso.**
 
-`	`A continuación, vamos a crear nuestro primer proyecto paso a paso en Visual C#.
+A continuación, vamos a crear nuestro primer proyecto paso a paso en Visual C#.
 
 1. Creamos un nuevo proyecto.
 
@@ -261,37 +203,37 @@ Finalmente, podemos **guardar, ejecutar y compilar** nuestro programa para que o
 
    Nos aparecerá una pantalla como la siguiente donde elegiremos como tipo de proyecto **Visual C#** y en tipo de Plantilla **Aplicación de Windows Form**. 
 
-   ![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.011.png)
+   ![Crear proyecto](./images/imagen11.png)
 
    A continuación, nos aparece una pantalla en la que podemos dar el nombre a nuestro proyecto y elegir la carpeta en la que queremos guardarlo (os recomiendo una carpeta para cada tema). Por ejemplo, aquí le llamamos **Ejemplo01.**
 
-   ![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.012.png)
+   ![Configurar proyecto](./images/imagen12.png)
 
-1. Empezamos a modificar nuestro proyecto.
+2. Empezamos a modificar nuestro proyecto.
 
    Entre los aspectos interesantes que vemos en la pantalla aparece lo que se llama un **formulario**. Este es el formulario principal de nuestra aplicación y es donde colocaremos las herramientas o controles (botones, textbox, labels) que nos van a permitir darle funcionalidad a nuestro programa. 
 
-   Si apretamos el boton  ![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.013.png) se **ejecutará** nuestra aplicación.
+   Si apretamos el boton  ![Boton iniciar](./images/imagen13.png) se **ejecutará** nuestra aplicación.
 
-1. Cambiando propiedades de nuestro formulario.
+3. Cambiando propiedades de nuestro formulario.
 
-En nuestro proyecto aparece (a la derecha) la ventana **Propiedades** (Si no aparece la podemos mostrar con Menú Ver -> Ventana Propiedades). 
+   En nuestro proyecto aparece (a la derecha) la ventana **Propiedades** (Si no aparece la podemos mostrar con Menú Ver -> Ventana Propiedades). 
 
-Las propiedades de un formulario o control nos permiten cambiar el aspecto o comportamiento de ese control.
+   Las propiedades de un formulario o control nos permiten cambiar el aspecto o comportamiento de ese control.
 
-Por ejemplo, la propiedad BackColor del formulario nos permite cambiar su color de fondo. 
+   Por ejemplo, la propiedad `BackColor` del formulario nos permite cambiar su color de fondo. 
 
-La propiedad Text nos permite cambiar el texto que aparece en la barra del formulario.
-
-
-![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.014.png)
-
-Si ejecutamos después de haber cambiado esas propiedades, el resultado será parecido a esto:
+   La propiedad `Text` nos permite cambiar el texto que aparece en la barra del formulario.
 
 
-![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.015.png)
+![Propiedad Text](./images/imagen14.png)
 
-1. Añadiendo controles a nuestro formulario:
+   Si ejecutamos después de haber cambiado esas propiedades, el resultado será parecido a esto:
+
+
+![Form azul](./images/imagen15.png)
+
+4. Añadiendo controles a nuestro formulario:
 
    Los controles son herramientas propias de aplicaciones Windows que nos permiten dar funcionalidad a nuestro programa.
 
@@ -299,9 +241,9 @@ Si ejecutamos después de haber cambiado esas propiedades, el resultado será pa
 
    **Vamos a añadir un botón a nuestro formulario**. Para ello, dentro de Controles comunes, pinchamos en el control Button y lo arrastramos al formulario. Nos aparece un botón con el texto Button1.
 
-   ![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.016.png)
+   ![Controles](./images/imagen16.png)
 
-1. Cambiando las propiedades a un control.
+5. Cambiando las propiedades a un control.
 
    Los controles, al igual que los formularios, también tienen **Propiedades**. 
 
@@ -310,15 +252,13 @@ Si ejecutamos después de haber cambiado esas propiedades, el resultado será pa
 - Text: Botón.
 - Name: btnPrimero.
 
-La propiedad Text de botón cambia el texto del botón.
+   La propiedad Text de botón cambia el texto del botón.
 
+   La propiedad Name no cambia el aspecto del botón, pero es la propiedad que le da nombre al mismo y que luego nos servirá para referenciarlo en el código del programa.
 
+![Ejecucion 2](./images/imagen17.png)
 
-La propiedad Name no cambia el aspecto del botón, pero es la propiedad que le da nombre al mismo y que luego nos servirá para referenciarlo en el código del programa.
-
-![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.017.png)
-
-1. Respondiendo a un evento.
+6. Respondiendo a un evento.
 
    Los eventos son sucesos que ocurren en las aplicaciones Windows, normalmente como resultado de la acción de un usuario.
 
@@ -330,51 +270,29 @@ La propiedad Name no cambia el aspecto del botón, pero es la propiedad que le d
 
    Para acceder al método que responde al evento click del botón tenemos dos opciones:
 
-- Pulsando el botón ![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.018.png) en la ventana Propiedades accedemos a los eventos del control. Luego pulsaríamos el evento Click.
+- Pulsando el botón ![Boton eventos](./images/imagen18.png) en la ventana Propiedades accedemos a los eventos del control. Luego pulsaríamos el evento Click.
 - Haciendo doble click sobre el botón.
 
 Nos aparece la ventana de código:
 
-
-``` csharp
-
+```csharp
 using System;
-
-using System.Collections.Generic;
-
-using System.ComponentModel;
-
-using System.Data;
-
-using System.Drawing;
-
-using System.Text;
-
 using System.Windows.Forms;
 
 namespace Ejemplo01Tema01
-
 {
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
 
-   public partial class Form1 : Form
+        private void bntPrimero_Click(object sender, EventArgs e)
+        {
+        }
 
-   {
-      public Form1()
-
-      {
-
-`            `InitializeComponent();
-
-`        `}
-
-`        `private void btnPrimero_Click(object sender, EventArgs e)
-
-`        `{
-
-`        `}
-
-`    `}
-
+    }
 }
 
 ```
@@ -383,32 +301,29 @@ En temas posteriores nos introduciremos en la sintaxis de C# e iremos entendiend
 
 Ahora vamos a añadir código para que se ejecute cuando ocurra el evento click sobre el botón:
 
-''' csharp
-`   `private void btnPrimero\_Click(object sender, EventArgs e)
+``` csharp
+private void bntPrimero_Click(object sender, EventArgs e)
+{
+   MessageBox.Show("Hola Mundo. Este es mi primer programa en C#");
+}
+```
 
-`   `{
+Vamos ahora a ejecutar de nuevo el programa ![Boton iniciar](./images/imagen13.png) y pulsar sobre el botón de nuestra aplicación:
 
-MessageBox.Show("Hola Mundo. Este es mi primer programa en C#");
-
-`   `}
-'''
-
-Vamos ahora a ejecutar de nuevo el programa ![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.019.png) y pulsar sobre el botón de nuestra aplicación:
-
-![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.020.png)
+![Aplicacion](./images/imagen19.png)
 
 MessageBox.Show nos permite mostrar por pantalla un texto.
 
-1. Guardar  nuestro proyecto.
+7. Guardar  nuestro proyecto.
 
-   Para guardar nuestro proyecto lo mejor que podemos hacer es pulsar el botón **grabar todo** de la barra de herramientas.![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.021.png)
+   Para guardar nuestro proyecto lo mejor que podemos hacer es pulsar el botón **grabar todo** de la barra de herramientas.![Grabar todo](./images/imagen20.png)
 
 
-1. Añadir más controles y funcionalidad a nuestro formulario.
+8. Añadir más controles y funcionalidad a nuestro formulario.
 
-Vamos a continuar nuestro ejemplo añadiendo tres nuevos controles a nuestro formulario:
+   Vamos a continuar nuestro ejemplo añadiendo tres nuevos controles a nuestro formulario:
 
-Añadiremos un control de tipo Button, otro de tipo Label y otro de tipo TextBox. Lo haremos en nuestro formulario, cogiendo esos controles de la ventana Cuadro de herramientas.
+   Añadiremos un control de tipo Button, otro de tipo Label y otro de tipo TextBox. Lo haremos en nuestro formulario, cogiendo esos controles de la ventana Cuadro de herramientas.
 
 - En las propiedades del botón pondremos **Name:** btnSegundo, **Text:** Otro botón.
 - En las propiedades del textbox pondremos **Name:** txtCuadroTexto.
@@ -416,7 +331,7 @@ Añadiremos un control de tipo Button, otro de tipo Label y otro de tipo TextBox
 
 El aspecto será similar al siguiente:
 
-![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.022.png)
+![Programa mas](./images/imagen21.png)
 
 Vamos a añadir la siguiente funcionalidad a nuestro programa: 
 
@@ -424,36 +339,33 @@ Queremos que, al pulsar el botón, aparezca en la etiqueta el texto que haya esc
 
 Para ello en el evento click del botón escribiremos:
 
-`        `private void btnSegundo\_Click(object sender, EventArgs e)
-
-`        `{
-
-`            `lblEtiqueta.Text = txtCuadroTexto.Text;
-
-`        `} 
+```csharp
+        private void btnSegundo_Click(object sender, EventArgs e)
+        {
+            LEtiqueta.Text = TCuadroTexto.Text;
+        }
+```
 
 De esta forma C# me permite cambiar propiedades de un control en tiempo de ejecución.
 
 Ejecutar el programa y comprobar los resultados.
 
-1. Errores de compilación
+9. Errores de compilación
 
-Se pueden producir errores de compilación o sintácticos. Por ejemplo, si en el messagebox anterior hubiéramos puesto el texto sin comillas nos daría error. Visual Studio nos informa del error y nos permite arreglarlo.
+   Se pueden producir errores de compilación o sintácticos. Por ejemplo, si en el messagebox anterior hubiéramos puesto el texto sin comillas nos daría error. Visual Studio nos informa del error y nos permite arreglarlo.
 
-private void btnPrimero\_Click(object sender, EventArgs e)
-
+```csharp
+private void btnPrimeroClick(object sender, EventArgs e)
 {
-
-MessageBox.Show(Hola Mundo. Éste es mi primer programa en C);
-
+   MessageBox.Show(Hola Mundo. Éste es mi primer programa en C);
 }
+```
 
-![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.023.png)
+![Error compilacion](./images/imagen22.png)
 
 **Siempre pulsaremos No** para poder arreglar los errores de compilación.
 
-![](Aspose.Words.f3fed405-11c7-4c4c-8a4c-d5be9b8b130c.024.png)
+![Errores](./images/imagen23.png)
 
 
 Haciendo doble click sobre el error nos permite ir a la línea donde tenemos el error de sintaxis y corregirlo.
-`		`*Página 1**
